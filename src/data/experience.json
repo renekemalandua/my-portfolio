@@ -1,0 +1,46 @@
+{
+  "experience": [
+    {
+      "position": {
+        "pt": "Desenvolvedor Full Stack Sênior",
+        "en": "Senior Full Stack Developer"
+      },
+      "company": "TechSolutions Angola",
+      "period": "2022 - Presente",
+      "location": "Luanda, Angola",
+      "description": {
+        "pt": "Desenvolvimento de aplicações web e mobile usando React, React Native e NestJS. Liderança técnica de equipe de 5 desenvolvedores.",
+        "en": "Development of web and mobile applications using React, React Native and NestJS. Technical leadership of a team of 5 developers."
+      },
+      "technologies": ["React", "React Native", "NestJS", "TypeScript", "PostgreSQL", "AWS"]
+    },
+    {
+      "position": {
+        "pt": "Desenvolvedor Full Stack",
+        "en": "Full Stack Developer"
+      },
+      "company": "StartupHub",
+      "period": "2021 - 2022",
+      "location": "Luanda, Angola",
+      "description": {
+        "pt": "Criação de MVPs e protótipos para startups. Desenvolvimento de APIs RESTful e interfaces responsivas.",
+        "en": "Creation of MVPs and prototypes for startups. Development of RESTful APIs and responsive interfaces."
+      },
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]
+    },
+    {
+      "position": {
+        "pt": "Desenvolvedor Frontend Júnior",
+        "en": "Junior Frontend Developer"
+      },
+      "company": "WebAngola",
+      "period": "2020 - 2021",
+      "location": "Luanda, Angola",
+      "description": {
+        "pt": "Desenvolvimento de interfaces web responsivas e manutenção de sistemas legados. Colaboração com equipes de design e backend.",
+        "en": "Development of responsive web interfaces and maintenance of legacy systems. Collaboration with design and backend teams."
+      },
+      "technologies": ["JavaScript", "HTML", "CSS", "Bootstrap", "jQuery"]
+    }
+  ]
+}

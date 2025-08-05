@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import skillsData from '@/data/skills.json';
 import educationData from '@/data/education.json';
+import experienceData from '@/data/experience.json';
 
 const AboutSection = () => {
   const { t, i18n } = useTranslation();
@@ -87,6 +88,37 @@ const AboutSection = () => {
                         <div className="flex justify-between items-center mt-1">
                           <span className="text-xs text-muted-foreground">{edu.period}</span>
                           <span className="text-xs text-muted-foreground">{edu.location}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Experience */}
+              <Card className="shadow-card">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-primary">{t('about.experience')}</h3>
+                  <div className="space-y-6">
+                    {experienceData.experience.map((exp, index) => (
+                      <div key={index} className="border-l-2 border-primary/20 pl-4 pb-4 last:pb-0">
+                        <h4 className="font-semibold text-foreground">
+                          {exp.position[i18n.language as 'pt' | 'en']}
+                        </h4>
+                        <p className="text-sm font-medium text-primary">{exp.company}</p>
+                        <div className="flex justify-between items-center mt-1 mb-2">
+                          <span className="text-xs text-muted-foreground">{exp.period}</span>
+                          <span className="text-xs text-muted-foreground">{exp.location}</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          {exp.description[i18n.language as 'pt' | 'en']}
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {exp.technologies.map((tech, techIndex) => (
+                            <Badge key={techIndex} variant="outline" className="text-xs">
+                              {tech}
+                            </Badge>
+                          ))}
                         </div>
                       </div>
                     ))}
