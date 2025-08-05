@@ -17,6 +17,9 @@
     "title": "Sobre mim",
     "description": "Sou um desenvolvedor full stack apaixonado por tecnologia, com expertise em React, React Native e NestJS. Tenho experiência em criar aplicações web e mobile completas, desde o frontend até o backend, sempre focando em performance, usabilidade e código limpo.",
     "skills": "Habilidades",
+    "education": "Educação",
+    "certifications": "Certificações",
+    "languages": "Idiomas",
     "experience": "Experiência",
     "years": "anos de experiência",
     "projects": "projetos concluídos"
