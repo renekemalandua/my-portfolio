@@ -55,7 +55,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm text-muted-foreground">
             <div>
-              © {currentYear} João Silva. {t('footer.rights')}
+              © {currentYear} Afonso Kemalandua. {t('footer.rights')}
             </div>
             <div className="flex items-center space-x-1">
               <span>{t('footer.built')}</span>
