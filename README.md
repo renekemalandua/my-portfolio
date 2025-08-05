@@ -18,7 +18,7 @@ Aqui compartilho um pouco sobre mim, meus projetos, habilidades e formas de cont
 
 ## 🌍 Acesse Online
 
-👉 [renekemalandua.vercel.app](https://renekemalandua.vercel.app) *(troca pelo link real quando tiver)*
+👉 [renekemalandua.vercel.app](https://afonsokemalandua-portfolio.vercel.app/)
 
 ---
 
@@ -43,10 +43,10 @@ Aqui compartilho um pouco sobre mim, meus projetos, habilidades e formas de cont
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/renekemalandua/portfolio.git
+git clone https://github.com/renekemalandua/my-portfolio.git
 
 # Entrar na pasta
-cd portfolio
+cd my-portfolio
 
 # Instalar dependências
 npm install
