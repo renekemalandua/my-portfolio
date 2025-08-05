@@ -28,19 +28,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'contato@joaosilva.dev',
-      href: 'mailto:contato@joaosilva.dev'
+      value: 'kemalanduar@gmail.com',
+      href: 'kemalanduar@gmail.com'
     },
     {
       icon: Phone,
       label: 'Telefone',
-      value: '+55 (11) 99999-9999',
-      href: 'tel:+5511999999999'
+      value: '+244 921 621 790',
+      href: 'tel:+244921621790'
     },
     {
       icon: MapPin,
       label: 'Localização',
-      value: 'São Paulo, Brasil',
+      value: 'Kilamba, Luanda',
       href: '#'
     }
   ];
