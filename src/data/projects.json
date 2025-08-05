@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": {
+        "pt": "E-commerce Moderno",
+        "en": "Modern E-commerce"
+      },
+      "description": {
+        "pt": "Plataforma de e-commerce completa com React, NestJS e React Native. Inclui painel administrativo, pagamentos e app mobile.",
+        "en": "Complete e-commerce platform with React, NestJS and React Native. Includes admin panel, payments and mobile app."
+      },
+      "technologies": ["React", "NestJS", "React Native", "TypeScript", "PostgreSQL", "Stripe"],
+      "liveUrl": "https://github.com",
+      "codeUrl": "https://github.com",
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": 2,
+      "name": {
+        "pt": "Sistema de Gestão",
+        "en": "Management System"
+      },
+      "description": {
+        "pt": "Sistema web para gestão empresarial com dashboard analítico, relatórios e integração com APIs externas.",
+        "en": "Web system for business management with analytical dashboard, reports and external API integration."
+      },
+      "technologies": ["React", "NestJS", "TypeScript", "MongoDB", "Chart.js", "Docker"],
+      "liveUrl": "https://github.com",
+      "codeUrl": "https://github.com",
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": 3,
+      "name": {
+        "pt": "App de Delivery",
+        "en": "Delivery App"
+      },
+      "description": {
+        "pt": "Aplicativo mobile de delivery com geolocalização, chat em tempo real e sistema de avaliações.",
+        "en": "Mobile delivery app with geolocation, real-time chat and rating system."
+      },
+      "technologies": ["React Native", "NestJS", "Socket.io", "Redis", "Maps API", "Firebase"],
+      "liveUrl": "https://github.com",
+      "codeUrl": "https://github.com",
+      "image": "/placeholder.svg"
+    }
+  ]
+}

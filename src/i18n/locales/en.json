@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "João Silva",
+    "role": "Full Stack Developer",
+    "description": "Specialist in React, React Native and NestJS. Building modern and performant digital solutions.",
+    "cta": "View my projects",
+    "contact": "Get in touch"
+  },
+  "about": {
+    "title": "About me",
+    "description": "I'm a full stack developer passionate about technology, with expertise in React, React Native and NestJS. I have experience creating complete web and mobile applications, from frontend to backend, always focusing on performance, usability and clean code.",
+    "skills": "Skills",
+    "experience": "Experience",
+    "years": "years of experience",
+    "projects": "completed projects"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Some of my recent work",
+    "viewProject": "View Project",
+    "viewCode": "View Code"
+  },
+  "contact": {
+    "title": "Let's talk?",
+    "subtitle": "Get in touch with me to discuss your next project",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again."
+    },
+    "social": "Social media"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "built": "Built with React & TypeScript"
+  }
+}

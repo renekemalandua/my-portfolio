@@ -1,13 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import Header from '@/components/Header';
+import HeroSection from '@/components/sections/HeroSection';
+import AboutSection from '@/components/sections/AboutSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
+import ContactSection from '@/components/sections/ContactSection';
+import Footer from '@/components/Footer';
+import { ThemeProvider, useTheme } from '@/components/ThemeProvider';
+import '@/i18n';
+
+const PortfolioContent = () => {
+  const { isDark, toggleTheme } = useTheme();
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Header isDark={isDark} toggleTheme={toggleTheme} />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
+      <PortfolioContent />
+    </ThemeProvider>
   );
 };
 
