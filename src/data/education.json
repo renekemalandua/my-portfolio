@@ -2,38 +2,39 @@
   "education": [
     {
       "degree": {
-        "pt": "Bacharelado em Ciência da Computação",
-        "en": "Bachelor's in Computer Science"
+        "pt": "Cadete, Programação",
+        "en": "Cadet, Programming"
       },
-      "institution": "Universidade Federal de Angola",
-      "period": "2018 - 2022",
+      "institution": "42 Luanda",
+      "period": {
+        "pt": "jun. de 2025 - Presente",
+        "en": "Jun 2025 - Present"
+      },
       "location": "Luanda, Angola"
     },
     {
       "degree": {
-        "pt": "Ensino Médio",
-        "en": "High School"
+        "pt": "Técnico Médio em Informática, Gestão de Sistemas Informáticos",
+        "en": "Technical High School in IT, Information Systems Management"
       },
-      "institution": "Colégio Sagrada Família",
-      "period": "2015 - 2017",
+      "institution": "Instituto Politécnico Industrial de Luanda - Makarenco",
+      "period": {
+        "pt": "fev. de 2020 - mai. de 2024",
+        "en": "Feb 2020 - May 2024"
+      },
       "location": "Luanda, Angola"
     }
   ],
   "certifications": [
     {
-      "name": "AWS Certified Developer",
-      "issuer": "Amazon Web Services",
-      "year": "2023"
+      "name": "NLW Journey - Node.js",
+      "issuer": "Rocketseat",
+      "year": "2024"
     },
     {
-      "name": "React Professional Certificate",
-      "issuer": "Meta",
-      "year": "2022"
-    },
-    {
-      "name": "Node.js Application Development",
-      "issuer": "IBM",
-      "year": "2022"
+      "name": "NLW Journey - React.js",
+      "issuer": "Rocketseat",
+      "year": "2024"
     }
   ],
   "languages": [
@@ -55,16 +56,6 @@
       "level": {
         "pt": "Avançado",
         "en": "Advanced"
-      }
-    },
-    {
-      "language": {
-        "pt": "Espanhol",
-        "en": "Spanish"
-      },
-      "level": {
-        "pt": "Intermediário",
-        "en": "Intermediate"
       }
     }
   ]

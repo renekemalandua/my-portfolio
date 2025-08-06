@@ -22,7 +22,8 @@
     "languages": "Languages",
     "experience": "Experience",
     "years": "years of experience",
-    "projects": "completed projects"
+    "projects": "completed projects",
+    "satisfaction":"satisfaction"
   },
   "projects": {
     "title": "My Projects",

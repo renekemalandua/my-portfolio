@@ -16,8 +16,8 @@ const AboutSection = () => {
 
   const stats = [
     { value: '3+', label: t('about.years') },
-    { value: '50+', label: t('about.projects') },
-    { value: '100%', label: 'Satisfação' }
+    { value: '5+', label: t('about.projects') },
+    { value: '100%', label: t('about.satisfaction') }
   ];
 
 
@@ -133,7 +133,7 @@ const AboutSection = () => {
                               <p className="text-sm text-muted-foreground">{exp.location}</p>
                             </div>
                             <Badge variant="outline" className="mt-2 md:mt-0">
-                              {exp.period}
+                              {exp.period[i18n.language as 'pt' | 'en']}
                             </Badge>
                           </div>
                           <p className="text-muted-foreground mb-4">
@@ -164,7 +164,7 @@ const AboutSection = () => {
                             </h4>
                             <p className="text-primary font-medium">{edu.institution}</p>
                             <div className="flex justify-between items-center mt-2">
-                              <Badge variant="outline">{edu.period}</Badge>
+                              <Badge variant="outline">{edu.period[i18n.language as 'pt' | 'en']}</Badge>
                               <span className="text-sm text-muted-foreground">{edu.location}</span>
                             </div>
                           </div>

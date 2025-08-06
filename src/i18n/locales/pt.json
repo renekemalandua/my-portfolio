@@ -21,8 +21,9 @@
     "certifications": "Certificações",
     "languages": "Idiomas",
     "experience": "Experiência",
-    "years": "anos de experiência",
-    "projects": "projetos concluídos"
+    "years": "Anos de experiência",
+    "projects": "Projetos concluídos",
+    "satisfaction":"Satisfação"
   },
   "projects": {
     "title": "Meus Projetos",

@@ -5,28 +5,28 @@
         "pt": "Frontend",
         "en": "Frontend"
       },
-      "items": ["React", "React Native", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion"]
+      "items": ["React", "React Native", "TypeScript", "Tailwind CSS", "Sass", "Framer Motion", "shadcn/ui", "Blade"]
     },
     {
       "category": {
         "pt": "Backend",
         "en": "Backend"
       },
-      "items": ["NestJS", "Node.js", "Express", "GraphQL", "REST APIs", "Microservices"]
+      "items": ["NestJS", "Node.js", "Express","TypeScript", "Laravel","PHP", "Spring Boot", "Java", "REST APIs"]
     },
     {
       "category": {
         "pt": "Banco de Dados",
         "en": "Database"
       },
-      "items": ["PostgreSQL", "MongoDB", "Redis", "Prisma", "TypeORM", "Supabase"]
+      "items": ["PostgreSQL", "MySQL", "Prisma", "Redis"]
     },
     {
       "category": {
         "pt": "DevOps & Ferramentas",
         "en": "DevOps & Tools"
       },
-      "items": ["Docker", "AWS", "Git", "GitHub Actions", "Jest", "Cypress"]
+      "items": ["Docker", "Git", "GitHub Actions"]
     }
   ]
 }

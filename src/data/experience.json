@@ -2,45 +2,71 @@
   "experience": [
     {
       "position": {
-        "pt": "Desenvolvedor Full Stack Sênior",
-        "en": "Senior Full Stack Developer"
+        "pt": "Desenvolvedor Full Stack  (Remoto)",
+        "en": "Full Stack Developer  (Remote)"
       },
-      "company": "TechSolutions Angola",
-      "period": "2022 - Presente",
-      "location": "Luanda, Angola",
+      "company": "Versus Esport",
+      "period": {
+        "pt":"Jun. 2025 - Presente",
+        "en":"Jun 2025 - Present"
+      },
+      "location": "Porto, Portugal",
       "description": {
-        "pt": "Desenvolvimento de aplicações web e mobile usando React, React Native e NestJS. Liderança técnica de equipe de 5 desenvolvedores.",
-        "en": "Development of web and mobile applications using React, React Native and NestJS. Technical leadership of a team of 5 developers."
+        "pt": "Desenvolvimento de aplicações web e mobile usando React, React Native e Spring Boot.",
+        "en": "Development of web and mobile applications using React, React Native, and Spring Boot."
       },
-      "technologies": ["React", "React Native", "NestJS", "TypeScript", "PostgreSQL", "AWS"]
+      "technologies": ["React", "React Native", "Spring Boot", "TypeScript", "PostgreSQL", "Stripe", "Tailwind CSS", "NativeWind"]
     },
     {
       "position": {
         "pt": "Desenvolvedor Full Stack",
         "en": "Full Stack Developer"
       },
-      "company": "StartupHub",
-      "period": "2021 - 2022",
+      "company": "DEVBANTU",
+      "period": {
+        "pt":"Jun. 2024 - Maio 2025",
+        "en":"Jun 2024 - May 2025"
+      },
       "location": "Luanda, Angola",
       "description": {
-        "pt": "Criação de MVPs e protótipos para startups. Desenvolvimento de APIs RESTful e interfaces responsivas.",
-        "en": "Creation of MVPs and prototypes for startups. Development of RESTful APIs and responsive interfaces."
+        "pt": "Desenvolvimento full stack com React.js, Blade, Laravel e NestJS. Criação de APIs escaláveis, automação e integração com bancos de dados.",
+        "en": "Full stack development with React.js, Blade, Laravel and NestJS. Built scalable APIs, automation and database integration."
       },
-      "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]
+      "technologies": ["React.js", "Blade", "Laravel","Tailwind CSS", "Bootstrap", "NestJS", "TypeScript", "MySQL", "PostgreSQL"]
     },
     {
       "position": {
-        "pt": "Desenvolvedor Frontend Júnior",
-        "en": "Junior Frontend Developer"
+        "pt": "Desenvolvedor Backend (Estagio)",
+        "en": "Backend Developer (Intern)"
       },
-      "company": "WebAngola",
-      "period": "2020 - 2021",
+      "company": "Nzooji",
+      "period": {
+        "pt": "out. de 2023 - fev. de 2024",
+        "en": "Oct 2023 - Feb 2024"
+      },
       "location": "Luanda, Angola",
       "description": {
-        "pt": "Desenvolvimento de interfaces web responsivas e manutenção de sistemas legados. Colaboração com equipes de design e backend.",
-        "en": "Development of responsive web interfaces and maintenance of legacy systems. Collaboration with design and backend teams."
+        "pt": "Colaboração em projetos backend com NestJS e Express. Participação em times ágeis, aplicando Clean Architecture, SOLID e DDD.",
+        "en": "Collaborated on backend projects with NestJS and Express. Contributed in agile teams using Clean Architecture, SOLID and DDD."
       },
-      "technologies": ["JavaScript", "HTML", "CSS", "Bootstrap", "jQuery"]
+      "technologies": ["NestJS", "Express.js", "TypeScript", "PostgreSQL", "Git", "Clean Architecture", "SOLID", "DDD"]
+    },
+    {
+      "position": {
+        "pt": "Desenvolvedor de Jogos",
+        "en": "Game Developer"
+      },
+      "company": "Autonação",
+      "period": {
+        "pt": "abr. de 2021 - ago. de 2023",
+        "en": "Apr 2021 - Aug 2023"
+      },
+      "location": "Luanda, Angola (Presencial)",
+      "description": {
+        "pt": "Desenvolvimento de mini jogos educativos com HTML, CSS, JavaScript e Windows Forms, aplicando gamificação para ensinar programação de forma lúdica.",
+        "en": "Developed educational mini-games using HTML, CSS, JavaScript, and Windows Forms, applying gamification to make programming learning fun and engaging."
+      },
+      "technologies": ["HTML", "CSS", "JavaScript","C#", "Windows Forms", "Gamification"]
     }
   ]
 }
