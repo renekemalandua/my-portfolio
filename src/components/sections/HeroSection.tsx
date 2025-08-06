@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -108,6 +108,18 @@ const HeroSection = () => {
             >
               <a href="#contact">
                 {t('hero.contact')}
+              </a>
+            </Button>
+            
+            <Button
+              asChild
+              variant="secondary"
+              size="lg"
+              className="bg-secondary/80 hover:bg-secondary"
+            >
+              <a href="/cv.pdf" download="Afonso_Kemalandua_CV.pdf">
+                <Download className="mr-2 h-4 w-4" />
+                {t('hero.downloadCV')}
               </a>
             </Button>
           </motion.div>
