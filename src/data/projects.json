@@ -3,14 +3,14 @@
     {
       "id": 1,
       "name": {
-        "pt": "E-commerce Moderno",
-        "en": "Modern E-commerce"
+        "pt": "LarAngola",
+        "en": "LarAngola"
       },
       "description": {
-        "pt": "Plataforma de e-commerce completa com React, NestJS e React Native. Inclui painel administrativo, pagamentos e app mobile.",
-        "en": "Complete e-commerce platform with React, NestJS and React Native. Includes admin panel, payments and mobile app."
+        "pt": "Plataforma web PWA para aluguel e venda de imóveis em Angola. Inclui busca por colegas de quarto e intermediários.",
+        "en": "A PWA web platform for renting and selling properties in Angola. Includes roommate and agent search."
       },
-      "technologies": ["React", "NestJS", "React Native", "TypeScript", "PostgreSQL", "Stripe"],
+      "technologies": ["React", "NestJS", "Chadcn UI", "TypeScript"],
       "liveUrl": "https://github.com",
       "codeUrl": "https://github.com",
       "image": "/placeholder.svg"
@@ -18,29 +18,29 @@
     {
       "id": 2,
       "name": {
-        "pt": "Sistema de Gestão",
-        "en": "Management System"
+        "pt": "Cowhand",
+        "en": "Cowhand"
       },
       "description": {
-        "pt": "Sistema web para gestão empresarial com dashboard analítico, relatórios e integração com APIs externas.",
-        "en": "Web system for business management with analytical dashboard, reports and external API integration."
+        "pt": "Aplicativo web PWA para controle inteligente de despesas, ajustando limites diários e semanais conforme os gastos.",
+        "en": "Smart expense tracking PWA Web app that adjusts daily and weekly limits based on spending."
       },
-      "technologies": ["React", "NestJS", "TypeScript", "MongoDB", "Chart.js", "Docker"],
-      "liveUrl": "https://github.com",
+      "technologies": ["React", "NestJS", "Chadcn UI", "TypeScript"],
+      "liveUrl": "https://cowhand.vercel.app/",
       "codeUrl": "https://github.com",
       "image": "/placeholder.svg"
     },
     {
       "id": 3,
       "name": {
-        "pt": "App de Delivery",
-        "en": "Delivery App"
+        "pt": "NanteRites",
+        "en": "NanteRites"
       },
       "description": {
-        "pt": "Aplicativo mobile de delivery com geolocalização, chat em tempo real e sistema de avaliações.",
-        "en": "Mobile delivery app with geolocation, real-time chat and rating system."
+        "pt": "Jogo mobile 2D baseado no tradicional Nante Rites angolano, com regras locais. Suporta partidas locais e contra bots.",
+        "en": "2D mobile game based on the traditional Angolan Nante Rites, following local rules. Supports local matches and AI opponents."
       },
-      "technologies": ["React Native", "NestJS", "Socket.io", "Redis", "Maps API", "Firebase"],
+      "technologies": ["React Native", "NestJS", "TypeScript"],
       "liveUrl": "https://github.com",
       "codeUrl": "https://github.com",
       "image": "/placeholder.svg"

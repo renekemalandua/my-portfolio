@@ -73,7 +73,7 @@ const ProjectsSection = () => {
 
                     {/* Technologies */}
                     <div className="flex flex-wrap gap-2 mb-6">
-                      {project.technologies.slice(0, 3).map((tech, techIndex) => (
+                      {project.technologies.slice(0, 5).map((tech, techIndex) => (
                         <span
                           key={techIndex}
                           className="px-2 py-1 bg-tech-badge text-xs rounded-md border border-border/50"
@@ -81,7 +81,7 @@ const ProjectsSection = () => {
                           {tech}
                         </span>
                       ))}
-                      {project.technologies.length > 3 && (
+                      {project.technologies.length > 5 && (
                         <span className="px-2 py-1 bg-tech-badge text-xs rounded-md border border-border/50">
                           +{project.technologies.length - 3}
                         </span>

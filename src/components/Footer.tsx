@@ -18,7 +18,7 @@ const Footer = () => {
         >
           {/* Logo */}
           <div className="text-2xl font-bold text-gradient">
-            JS
+            AK
           </div>
           
           {/* Navigation Links */}
@@ -53,13 +53,12 @@ const Footer = () => {
           <div className="w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
           
           {/* Copyright */}
-          <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm text-muted-foreground">
+          <div className="flex flex-col sm:flex-col justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm text-muted-foreground">
             <div>
               © {currentYear} Afonso Kemalandua. {t('footer.rights')}
             </div>
             <div className="flex items-center space-x-1">
               <span>{t('footer.built')}</span>
-              <Heart className="h-4 w-4 text-red-500 fill-current animate-pulse" />
             </div>
           </div>
         </motion.div>
