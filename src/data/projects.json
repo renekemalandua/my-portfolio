@@ -11,7 +11,7 @@
         "en": "A PWA web platform for renting and selling properties in Angola. Includes roommate and agent search."
       },
       "technologies": ["React", "NestJS", "Chadcn UI", "TypeScript"],
-      "liveUrl": "https://github.com",
+      "liveUrl": "https://larangola.vercel.app/",
       "codeUrl": "https://github.com",
       "image": "/placeholder.svg"
     },
