@@ -33,6 +33,21 @@
     {
       "id": 3,
       "name": {
+        "pt": "OmniMind API",
+        "en": "OmniMind API"
+      },
+      "description": {
+        "pt": "OmniMind é um serviço backend centralizado projetado para gerenciar múltiplos projetos com sistema de autenticação compartilhado, arquitetura modular e infraestrutura escalável.",
+        "en": "OmniMind is a centralized backend service designed to manage multiple projects with a shared authentication system, modular architecture, and scalable infrastructure."
+      },
+      "technologies": ["NestJS", "TypeScript", "Docker", "PostgreSQL", "Prisma"],
+      "liveUrl": "https://github.com",
+      "codeUrl": "https://github.com",
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": 4,
+      "name": {
         "pt": "NanteRites",
         "en": "NanteRites"
       },
