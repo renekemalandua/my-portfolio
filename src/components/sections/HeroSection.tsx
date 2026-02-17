@@ -6,23 +6,26 @@ import { ArrowDown, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const cvUrl = i18n.language === 'pt' ? '/CV-PT Afonso Kemalandua.pdf' : '/CV-EN Afonso Kemalandua.pdf.pdf';
+  const cvFileName = i18n.language === 'pt' ? 'CV-PT_Afonso_Kemalandua.pdf' : 'CV-EN_Afonso_Kemalandua.pdf';
 
   const socialLinks = [
-    { 
-      icon: FaGithub, 
-      href: 'https://github.com', 
-      label: 'GitHub' 
+    {
+      icon: FaGithub,
+      href: 'https://github.com/renekemalandua',
+      label: 'GitHub'
     },
-    { 
-      icon: FaLinkedin, 
-      href: 'https://linkedin.com', 
-      label: 'LinkedIn' 
+    {
+      icon: FaLinkedin,
+      href: 'https://linkedin.com/in/rkemalandua',
+      label: 'LinkedIn'
     },
-    { 
-      icon: HiMail, 
-      href: 'mailto:contato@joaosilva.dev', 
-      label: 'Email' 
+    {
+      icon: HiMail,
+      href: 'mailto:kemalanduar@gmail.com',
+      label: 'Email'
     }
   ];
 
@@ -99,7 +102,7 @@ const HeroSection = () => {
                 <ArrowDown className="ml-2 h-4 w-4" />
               </a>
             </Button>
-            
+
             <Button
               asChild
               variant="outline"
@@ -110,14 +113,14 @@ const HeroSection = () => {
                 {t('hero.contact')}
               </a>
             </Button>
-            
+
             <Button
               asChild
               variant="secondary"
               size="lg"
               className="bg-secondary/80 hover:bg-secondary"
             >
-              <a href="/cv.pdf" download="Afonso_Kemalandua_CV.pdf">
+              <a href={cvUrl} download={cvFileName}>
                 <Download className="mr-2 h-4 w-4" />
                 {t('hero.downloadCV')}
               </a>

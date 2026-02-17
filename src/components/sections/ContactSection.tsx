@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Send, Mail, Phone, MapPin } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -16,7 +16,7 @@ const ContactSection = () => {
   const { toast } = useToast();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,7 +29,7 @@ const ContactSection = () => {
       icon: Mail,
       label: 'Email',
       value: 'kemalanduar@gmail.com',
-      href: 'kemalanduar@gmail.com'
+      href: 'mailto:kemalanduar@gmail.com'
     },
     {
       icon: Phone,
@@ -40,7 +40,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: 'Localização',
-      value: 'Kilamba, Luanda',
+      value: 'KK5000, Luanda',
       href: '#'
     }
   ];
@@ -49,17 +49,17 @@ const ContactSection = () => {
     {
       icon: FaGithub,
       label: 'GitHub',
-      href: 'https://github.com'
+      href: 'https://github.com/renekemalandua'
     },
     {
       icon: FaLinkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com'
+      href: 'https://linkedin.com/in/rkemalandua'
     },
     {
-      icon: FaTwitter,
-      label: 'Twitter',
-      href: 'https://twitter.com'
+      icon: FaWhatsapp,
+      label: 'WhatsApp',
+      href: 'https://wa.me/+244921621790'
     }
   ];
 
@@ -94,7 +94,7 @@ const ContactSection = () => {
           className="max-w-6xl mx-auto"
         >
           {/* Title */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -129,7 +129,7 @@ const ContactSection = () => {
                         className="bg-background/50 border-border/50 focus:border-primary"
                       />
                     </div>
-                    
+
                     <div>
                       <Input
                         name="email"
@@ -141,7 +141,7 @@ const ContactSection = () => {
                         className="bg-background/50 border-border/50 focus:border-primary"
                       />
                     </div>
-                    
+
                     <div>
                       <Textarea
                         name="message"
@@ -153,7 +153,7 @@ const ContactSection = () => {
                         className="bg-background/50 border-border/50 focus:border-primary resize-none"
                       />
                     </div>
-                    
+
                     <Button
                       type="submit"
                       disabled={isSubmitting}

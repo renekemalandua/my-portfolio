@@ -12,7 +12,9 @@
     "description": "Cloud-Oriented Software Engineer specializing in React, React Native, NestJS and Spring Boot. Building scalable, secure and maintainable digital solutions.",
     "cta": "View my projects",
     "contact": "Get in touch",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "downloadCV_PT": "Download CV (PT)",
+    "downloadCV_EN": "Download CV (EN)"
   },
   "about": {
     "title": "About me",

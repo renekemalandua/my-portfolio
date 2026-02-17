@@ -12,7 +12,9 @@
     "description": "Engenheiro de Software com foco em Cloud, especializado em React, React Native, NestJS e Spring Boot. Construindo soluções digitais escaláveis, seguras e sustentáveis.",
     "cta": "Ver meus projetos",
     "contact": "Entre em contato",
-    "downloadCV": "Baixar CV"
+    "downloadCV": "Baixar CV",
+    "downloadCV_PT": "Baixar CV (PT)",
+    "downloadCV_EN": "Baixar CV (EN)"
   },
   "about": {
     "title": "Sobre mim",
