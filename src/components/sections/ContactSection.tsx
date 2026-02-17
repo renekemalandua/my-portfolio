@@ -1,28 +1,14 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Send, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
   const { t } = useTranslation();
-  const { toast } = useToast();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
-
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const contactInfo = [
     {
@@ -63,27 +49,6 @@ const ContactSection = () => {
     }
   ];
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    setTimeout(() => {
-      toast({
-        title: t('contact.form.success'),
-        description: 'Entrarei em contato em breve!',
-      });
-      setFormData({ name: '', email: '', message: '' });
-      setIsSubmitting(false);
-    }, 2000);
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <section id="contact" ref={ref} className="py-20 bg-section-bg">
       <div className="container mx-auto px-4">
@@ -91,7 +56,7 @@ const ContactSection = () => {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-6xl mx-auto"
+          className="max-w-4xl mx-auto"
         >
           {/* Title */}
           <motion.div
@@ -109,98 +74,32 @@ const ContactSection = () => {
             <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full mt-6" />
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
+          {/* Contact Content */}
+          <div className="flex flex-col items-center space-y-12">
+            {/* Contact Details */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: 0.2 }}
+              className="w-full max-w-3xl"
             >
-              <Card className="shadow-card">
-                <CardContent className="p-8">
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
-                      <Input
-                        name="name"
-                        placeholder={t('contact.form.name')}
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        className="bg-background/50 border-border/50 focus:border-primary"
-                      />
-                    </div>
-
-                    <div>
-                      <Input
-                        name="email"
-                        type="email"
-                        placeholder={t('contact.form.email')}
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        className="bg-background/50 border-border/50 focus:border-primary"
-                      />
-                    </div>
-
-                    <div>
-                      <Textarea
-                        name="message"
-                        placeholder={t('contact.form.message')}
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        required
-                        rows={6}
-                        className="bg-background/50 border-border/50 focus:border-primary resize-none"
-                      />
-                    </div>
-
-                    <Button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-gradient-primary hover:opacity-90 text-white shadow-glow"
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <div className="animate-spin mr-2 h-4 w-4 border-2 border-white border-t-transparent rounded-full" />
-                          {t('contact.form.sending')}
-                        </>
-                      ) : (
-                        <>
-                          <Send className="mr-2 h-4 w-4" />
-                          {t('contact.form.send')}
-                        </>
-                      )}
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Contact Info */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="space-y-8"
-            >
-              {/* Contact Details */}
-              <div className="space-y-6">
+              <div className="grid md:grid-cols-3 gap-6">
                 {contactInfo.map((info, index) => (
                   <motion.div
                     key={index}
-                    whileHover={{ x: 5 }}
-                    className="flex items-center space-x-4 p-4 rounded-lg bg-background/50 border border-border/50 hover:border-primary/30 transition-colors"
+                    whileHover={{ y: -5 }}
+                    className="flex flex-col items-center text-center space-y-3 p-6 rounded-xl bg-background/50 border border-border/50 hover:border-primary/30 transition-all shadow-sm hover:shadow-md"
                   >
                     <div className="p-3 bg-primary/10 rounded-full">
-                      <info.icon className="h-5 w-5 text-primary" />
+                      <info.icon className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <div className="font-medium text-sm text-muted-foreground">
+                      <div className="font-medium text-sm text-muted-foreground mb-1">
                         {info.label}
                       </div>
                       <a
                         href={info.href}
-                        className="text-foreground hover:text-primary transition-colors"
+                        className="text-foreground hover:text-primary transition-colors font-medium"
                       >
                         {info.value}
                       </a>
@@ -208,26 +107,31 @@ const ContactSection = () => {
                   </motion.div>
                 ))}
               </div>
+            </motion.div>
 
-              {/* Social Links */}
-              <div>
-                <h3 className="text-xl font-semibold mb-6">{t('contact.social')}</h3>
-                <div className="flex space-x-4">
-                  {socialLinks.map((social, index) => (
-                    <motion.a
-                      key={index}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.1, y: -2 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="p-4 bg-background/50 backdrop-blur-sm rounded-lg border border-border/50 hover:border-primary/30 transition-colors shadow-card hover:shadow-glow"
-                    >
-                      <social.icon className="h-6 w-6 text-foreground/70 hover:text-primary transition-colors" />
-                      <span className="sr-only">{social.label}</span>
-                    </motion.a>
-                  ))}
-                </div>
+            {/* Social Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-center"
+            >
+              <h3 className="text-xl font-semibold mb-6">{t('contact.social')}</h3>
+              <div className="flex justify-center space-x-6">
+                {socialLinks.map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="p-4 bg-background/50 backdrop-blur-sm rounded-full border border-border/50 hover:border-primary/30 transition-colors shadow-card hover:shadow-glow"
+                  >
+                    <social.icon className="h-6 w-6 text-foreground/70 hover:text-primary transition-colors" />
+                    <span className="sr-only">{social.label}</span>
+                  </motion.a>
+                ))}
               </div>
             </motion.div>
           </div>
