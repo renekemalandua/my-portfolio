@@ -8,15 +8,15 @@
   "hero": {
     "greeting": "Olá, eu sou",
     "name": "Afonso Kemalandua",
-    "role": "Desenvolvedor Full Stack",
-    "description": "Especialista em React, React Native e NestJS. Criando soluções digitais modernas e performáticas.",
+    "role": "Engenheiro de Software com foco em Cloud",
+    "description": "Engenheiro de Software com foco em Cloud, especializado em React, React Native, NestJS e Spring Boot. Construindo soluções digitais escaláveis, seguras e sustentáveis.",
     "cta": "Ver meus projetos",
     "contact": "Entre em contato",
     "downloadCV": "Baixar CV"
   },
   "about": {
     "title": "Sobre mim",
-    "description": "Sou um desenvolvedor full stack apaixonado por tecnologia, com expertise em React, React Native e NestJS. Tenho experiência em criar aplicações web e mobile completas, desde o frontend até o backend, sempre focando em performance, usabilidade e código limpo.",
+    "description": "Sou um Engenheiro de Software com foco em Cloud, desenvolvendo aplicações web e mobile escaláveis com React, React Native, NestJS e Spring Boot. Atuo tanto no frontend quanto no backend, projetando APIs, integrando sistemas e otimizando performance. Estou aprofundando minha atuação em arquitetura cloud, práticas DevOps e automação de infraestrutura, sempre priorizando código limpo, confiabilidade e manutenibilidade a longo prazo.",
     "skills": "Habilidades",
     "education": "Educação",
     "certifications": "Certificações",
@@ -24,13 +24,16 @@
     "experience": "Experiência",
     "years": "Anos de experiência",
     "projects": "Projetos concluídos",
-    "satisfaction":"Satisfação"
+    "satisfaction": "Satisfação"
   },
   "projects": {
     "title": "Meus Projetos",
-    "subtitle": "Alguns dos meus trabalhos recentes",
+    "subtitle": "Participei de diversos projetos, aqui estão os que escolhi destacar",
     "viewProject": "Ver Projeto",
-    "viewCode": "Ver Código"
+    "viewCode": "Ver Código",
+    "web": "Web",
+    "ios": "iOS",
+    "android": "Android"
   },
   "contact": {
     "title": "Vamos conversar?",

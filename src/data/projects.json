@@ -10,9 +10,14 @@
         "pt": "Plataforma web PWA para aluguel e venda de imóveis em Angola. Inclui busca por colegas de quarto e intermediários.",
         "en": "A PWA web platform for renting and selling properties in Angola. Includes roommate and agent search."
       },
-      "technologies": ["React", "NestJS", "Chadcn UI", "TypeScript"],
-      "liveUrl": "https://larangola.vercel.app/",
-      "codeUrl": "https://github.com",
+      "technologies": [
+        "React",
+        "NestJS",
+        "Chadcn UI",
+        "TypeScript"
+      ],
+      "webUrl": "https://larangola.vercel.app/",
+      "codeUrl": "https://github.com/Kems43/LarAngola",
       "image": "/placeholder.svg"
     },
     {
@@ -25,40 +30,55 @@
         "pt": "Aplicativo web PWA para controle inteligente de despesas, ajustando limites diários e semanais conforme os gastos.",
         "en": "Smart expense tracking PWA Web app that adjusts daily and weekly limits based on spending."
       },
-      "technologies": ["React", "NestJS", "Chadcn UI", "TypeScript"],
-      "liveUrl": "https://cowhand.vercel.app/",
-      "codeUrl": "https://github.com",
+      "technologies": [
+        "React",
+        "NestJS",
+        "Chadcn UI",
+        "TypeScript"
+      ],
+      "webUrl": "https://cowhand.vercel.app/",
+      "codeUrl": "https://github.com/Kems43/cowhand",
       "image": "/placeholder.svg"
     },
     {
       "id": 3,
       "name": {
-        "pt": "OmniMind API",
-        "en": "OmniMind API"
+        "pt": "Versus Esports",
+        "en": "Versus Esports"
       },
       "description": {
-        "pt": "OmniMind é um serviço backend centralizado projetado para gerenciar múltiplos projetos com sistema de autenticação compartilhado, arquitetura modular e infraestrutura escalável.",
-        "en": "OmniMind is a centralized backend service designed to manage multiple projects with a shared authentication system, modular architecture, and scalable infrastructure."
+        "pt": "Plataforma competitiva: crie equipes, participe de torneios valendo prêmios e conecte-se com a comunidade gamer.",
+        "en": "Competitive gaming platform to build teams, join tournaments for real prizes, and connect with the gaming community."
       },
-      "technologies": ["NestJS", "TypeScript", "Docker", "PostgreSQL", "Prisma"],
-      "liveUrl": "https://github.com",
-      "codeUrl": "https://github.com",
-      "image": "/placeholder.svg"
+      "technologies": [
+        "React",
+        "React Native",
+        "Spring Boot",
+        "Docker"
+      ],
+      "webUrl": "https://www.versusesport.com/",
+      "iosUrl": "https://apps.apple.com/pt/app/versus-esport/id6746331249?l=en-GB",
+      "image": "/versus-esports-new.png"
     },
     {
       "id": 4,
       "name": {
-        "pt": "NanteRites",
-        "en": "NanteRites"
+        "pt": "Frota Motors",
+        "en": "Frota Motors"
       },
       "description": {
-        "pt": "Jogo mobile 2D baseado no tradicional Nante Rites angolano, com regras locais. Suporta partidas locais e contra bots.",
-        "en": "2D mobile game based on the traditional Angolan Nante Rites, following local rules. Supports local matches and AI opponents."
+        "pt": "Marketplace de veículos e peças em Angola com serviços de financiamento e gestão de inspeções.",
+        "en": "Vehicle and parts marketplace in Angola featuring financing services and inspection management."
       },
-      "technologies": ["React Native", "NestJS", "TypeScript"],
-      "liveUrl": "https://github.com",
-      "codeUrl": "https://github.com",
-      "image": "/placeholder.svg"
+      "technologies": [
+        "React",
+        "React Native",
+        "Spring Boot",
+        "Docker"
+      ],
+      "webUrl": "https://www.frotamotors.com/",
+      "iosUrl": "https://apps.apple.com/pt/app/frota-motors-marketplace/id6755246656?l=en-GB",
+      "image": "/frota-motors.png"
     }
   ]
 }

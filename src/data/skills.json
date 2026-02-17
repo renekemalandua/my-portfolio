@@ -5,28 +5,60 @@
         "pt": "Frontend",
         "en": "Frontend"
       },
-      "items": ["React", "React Native", "TypeScript", "Tailwind CSS", "Sass", "Framer Motion", "shadcn/ui", "Blade"]
+      "items": [
+        "React",
+        "React Native",
+        "Tailwind CSS",
+        "Sass",
+        "Framer Motion",
+        "shadcn/ui",
+        "Blade",
+        "Responsive Design",
+        "Accessibility (a11y)",
+        "State Management (Redux, Context API)",
+        "React Query"
+      ]
     },
     {
       "category": {
         "pt": "Backend",
         "en": "Backend"
       },
-      "items": ["NestJS", "Node.js", "Express","TypeScript", "Laravel","PHP", "Spring Boot", "Java", "REST APIs"]
+      "items": [
+        "NestJS",
+        "Spring Boot",
+        "Laravel",
+        "REST APIs",
+        "Authentication & Authorization (JWT, OAuth2)",
+        "Database Design & SQL",
+        "Performance Optimization"
+      ]
     },
     {
       "category": {
         "pt": "Banco de Dados",
         "en": "Database"
       },
-      "items": ["PostgreSQL", "MySQL", "Prisma", "Redis"]
+      "items": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Prisma",
+        "Database Design & Optimization"
+      ]
     },
     {
       "category": {
         "pt": "DevOps & Ferramentas",
         "en": "DevOps & Tools"
       },
-      "items": ["Docker", "Git", "GitHub Actions"]
+      "items": [
+        "Docker",
+        "Git",
+        "CI/CD",
+        "Kubernetes"
+      ]
     }
   ]
 }

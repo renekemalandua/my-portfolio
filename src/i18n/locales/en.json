@@ -8,15 +8,15 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Afonso Kemalandua",
-    "role": "Full Stack Developer",
-    "description": "Specialist in React, React Native and NestJS. Building modern and performant digital solutions.",
+    "role": "Cloud-Oriented Software Engineer",
+    "description": "Cloud-Oriented Software Engineer specializing in React, React Native, NestJS and Spring Boot. Building scalable, secure and maintainable digital solutions.",
     "cta": "View my projects",
     "contact": "Get in touch",
     "downloadCV": "Download CV"
   },
   "about": {
     "title": "About me",
-    "description": "I'm a full stack developer passionate about technology, with expertise in React, React Native and NestJS. I have experience creating complete web and mobile applications, from frontend to backend, always focusing on performance, usability and clean code.",
+    "description": "I'm a Cloud-Oriented Software Engineer building scalable web and mobile applications using React, React Native, NestJS and Spring Boot. I work across frontend and backend, designing APIs, integrating systems and improving performance. I'm expanding my expertise in cloud architecture, DevOps practices and infrastructure automation, focusing on clean code, reliability and long-term maintainability.",
     "skills": "Skills",
     "education": "Education",
     "certifications": "Certifications",
@@ -24,13 +24,16 @@
     "experience": "Experience",
     "years": "years of experience",
     "projects": "completed projects",
-    "satisfaction":"satisfaction"
+    "satisfaction": "satisfaction"
   },
   "projects": {
     "title": "My Projects",
-    "subtitle": "Some of my recent work",
+    "subtitle": "I've worked on many projects, these are the ones I wanted to highlight",
     "viewProject": "View Project",
-    "viewCode": "View Code"
+    "viewCode": "View Code",
+    "web": "Web",
+    "ios": "iOS",
+    "android": "Android"
   },
   "contact": {
     "title": "Let's talk?",
