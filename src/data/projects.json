@@ -17,7 +17,7 @@
         "TypeScript"
       ],
       "webUrl": "https://larangola.vercel.app/",
-      "codeUrl": "https://github.com/Kems43/LarAngola",
+      "androidDisabled": true,
       "image": "/larangola-new.png"
     },
     {
@@ -37,8 +37,8 @@
         "TypeScript"
       ],
       "webUrl": "https://cowhand.vercel.app/",
-      "codeUrl": "https://github.com/Kems43/cowhand",
-      "image": "/placeholder.svg"
+      "androidDisabled": true,
+      "image": "/cowhand-new.png"
     },
     {
       "id": 3,
@@ -79,6 +79,26 @@
       "webUrl": "https://www.frotamotors.com/",
       "iosUrl": "https://apps.apple.com/pt/app/frota-motors-marketplace/id6755246656?l=en-GB",
       "image": "/frota-motors.png"
+    },
+    {
+      "id": 5,
+      "name": {
+        "pt": "CloudTasker",
+        "en": "CloudTasker"
+      },
+      "description": {
+        "pt": "API RESTful de nível industrial para gerenciamento de tarefas, projetada com foco em escalabilidade, observabilidade e portabilidade. Não é apenas um CRUD; é uma demonstração de arquitetura robusta integrando Java moderno com ecossistema Cloud Native.",
+        "en": "Industrial-grade RESTful API for task management, designed with a focus on scalability, observability, and portability. It's not just a CRUD; it's a demonstration of robust architecture integrating modern Java with the Cloud Native ecosystem."
+      },
+      "technologies": [
+        "Spring Boot",
+        "PostgreSQL",
+        "Docker",
+        "Kubernetes",
+        "CI/CD"
+      ],
+      "codeUrl": "https://github.com/renekemalandua/cloud-tasker",
+      "image": "/cloud-tasker.png"
     }
   ]
 }

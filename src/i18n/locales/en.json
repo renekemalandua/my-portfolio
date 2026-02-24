@@ -9,7 +9,7 @@
     "greeting": "Hi, I'm",
     "name": "Afonso Kemalandua",
     "role": "Cloud-Oriented Software Engineer",
-    "description": "Cloud-Oriented Software Engineer specializing in React, React Native, NestJS and Spring Boot. Building scalable, secure and maintainable digital solutions.",
+    "description": "Cloud-Oriented Software Engineer (AWS) specializing in React, React Native, NestJS and Spring Boot. Building scalable, secure and maintainable digital solutions.",
     "cta": "View my projects",
     "contact": "Get in touch",
     "downloadCV": "Download CV",
@@ -18,7 +18,7 @@
   },
   "about": {
     "title": "About me",
-    "description": "I'm a Cloud-Oriented Software Engineer building scalable web and mobile applications using React, React Native, NestJS and Spring Boot. I work across frontend and backend, designing APIs, integrating systems and improving performance. I'm expanding my expertise in cloud architecture, DevOps practices and infrastructure automation, focusing on clean code, reliability and long-term maintainability.",
+    "description": "I'm a Cloud-Oriented Software Engineer building scalable web and mobile applications using React, React Native, NestJS and Spring Boot. I work across frontend and backend, designing APIs, integrating systems and improving performance. I'm expanding my expertise in cloud architecture and DevOps practices, utilizing providers like AWS for infrastructure and automation, focusing on clean code, reliability and long-term maintainability.",
     "skills": "Skills",
     "education": "Education",
     "certifications": "Certifications",
@@ -35,7 +35,8 @@
     "viewCode": "View Code",
     "web": "Web",
     "ios": "iOS",
-    "android": "Android"
+    "android": "Android",
+    "unavailable": "Unavailable"
   },
   "contact": {
     "title": "Let's talk?",

@@ -10,13 +10,8 @@
         "React Native",
         "Tailwind CSS",
         "Sass",
-        "Framer Motion",
         "shadcn/ui",
-        "Blade",
-        "Responsive Design",
-        "Accessibility (a11y)",
-        "State Management (Redux, Context API)",
-        "React Query"
+        "Blade"
       ]
     },
     {
@@ -29,9 +24,7 @@
         "Spring Boot",
         "Laravel",
         "REST APIs",
-        "Authentication & Authorization (JWT, OAuth2)",
-        "Database Design & SQL",
-        "Performance Optimization"
+        "Auth (JWT, OAuth2)"
       ]
     },
     {
@@ -42,10 +35,9 @@
       "items": [
         "PostgreSQL",
         "MySQL",
-        "MongoDB",
-        "Redis",
         "Prisma",
-        "Database Design & Optimization"
+        "Spring Data JPA",
+        "Database Design & SQL"
       ]
     },
     {
@@ -57,7 +49,8 @@
         "Docker",
         "Git",
         "CI/CD",
-        "Kubernetes"
+        "Kubernetes",
+        "AWS"
       ]
     }
   ]

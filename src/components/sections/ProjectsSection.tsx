@@ -100,10 +100,9 @@ const ProjectsSection = () => {
 
                   <CardFooter className="pt-4 border-t border-border/50 flex flex-wrap gap-3">
                     {/* Web Link */}
-                    {/* @ts-ignore */}
-                    {project.webUrl && (
+                    {(project as any).webUrl && (
                       <Button asChild size="sm" className="flex-1 bg-gradient-primary text-white shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all">
-                        <a href={project.webUrl} target="_blank" rel="noopener noreferrer">
+                        <a href={(project as any).webUrl} target="_blank" rel="noopener noreferrer">
                           <Globe className="w-4 h-4 mr-2" />
                           {t('projects.web')}
                         </a>
@@ -111,10 +110,9 @@ const ProjectsSection = () => {
                     )}
 
                     {/* iOS Link */}
-                    {/* @ts-ignore */}
-                    {project.iosUrl && (
+                    {(project as any).iosUrl && (
                       <Button asChild size="sm" variant="secondary" className="flex-1 hover:bg-secondary/80">
-                        <a href={project.iosUrl} target="_blank" rel="noopener noreferrer">
+                        <a href={(project as any).iosUrl} target="_blank" rel="noopener noreferrer">
                           <Smartphone className="w-4 h-4 mr-2" />
                           {t('projects.ios')}
                         </a>
@@ -122,22 +120,31 @@ const ProjectsSection = () => {
                     )}
 
                     {/* Android Link */}
-                    {/* @ts-ignore */}
-                    {project.androidUrl && (
+                    {(project as any).androidUrl ? (
                       <Button asChild size="sm" variant="secondary" className="flex-1 hover:bg-secondary/80">
-                        <a href={project.androidUrl} target="_blank" rel="noopener noreferrer">
+                        <a href={(project as any).androidUrl} target="_blank" rel="noopener noreferrer">
                           <Smartphone className="w-4 h-4 mr-2" />
                           {t('projects.android')}
                         </a>
                       </Button>
-                    )}
+                    ) : (project as any).androidDisabled ? (
+                      <Button disabled size="sm" variant="secondary" className="flex-1 opacity-50 cursor-not-allowed">
+                        <Smartphone className="w-4 h-4 mr-2" />
+                        {t('projects.android')} ({t('projects.unavailable')})
+                      </Button>
+                    ) : null}
 
                     {/* Code Link */}
-                    {/* @ts-ignore */}
-                    {project.codeUrl && (
-                      <Button asChild variant="outline" size="sm" className="border-primary/20 hover:bg-primary/5 hover:border-primary/50 transition-colors">
-                        <a href={project.codeUrl} target="_blank" rel="noopener noreferrer" aria-label={t('projects.viewCode')}>
-                          <Github className="w-4 h-4" />
+                    {(project as any).codeUrl && (
+                      <Button
+                        asChild
+                        variant={!(project as any).webUrl && !(project as any).iosUrl && !(project as any).androidUrl && !(project as any).androidDisabled ? "default" : "outline"}
+                        size="sm"
+                        className={!(project as any).webUrl && !(project as any).iosUrl && !(project as any).androidUrl && !(project as any).androidDisabled ? "flex-1 bg-gradient-primary text-white shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all w-full" : "border-primary/20 hover:bg-primary/5 hover:border-primary/50 transition-colors"}
+                      >
+                        <a href={(project as any).codeUrl} target="_blank" rel="noopener noreferrer" aria-label={t('projects.viewCode')}>
+                          <Github className={!(project as any).webUrl && !(project as any).iosUrl && !(project as any).androidUrl && !(project as any).androidDisabled ? "w-4 h-4 mr-2" : "w-4 h-4"} />
+                          {(!(project as any).webUrl && !(project as any).iosUrl && !(project as any).androidUrl && !(project as any).androidDisabled) && t('projects.viewCode')}
                         </a>
                       </Button>
                     )}
