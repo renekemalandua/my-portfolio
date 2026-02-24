@@ -16,9 +16,9 @@ type ThemeProviderState = {
 };
 
 const initialState: ThemeProviderState = {
-  theme: 'system',
+  theme: 'dark',
   setTheme: () => null,
-  isDark: false,
+  isDark: true,
   toggleTheme: () => null,
 };
 
@@ -26,15 +26,19 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
 export function ThemeProvider({
   children,
-  defaultTheme = 'system',
+  defaultTheme = 'dark',
   storageKey = 'portfolio-theme',
   ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(
-    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
-  );
+  const [theme, setTheme] = useState<Theme>(() => {
+    const stored = localStorage.getItem(storageKey) as Theme;
+    if (stored && stored !== 'system') {
+      return stored;
+    }
+    return defaultTheme;
+  });
 
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(theme === 'dark');
 
   useEffect(() => {
     const root = window.document.documentElement;
